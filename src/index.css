@@ -1,52 +1,115 @@
+@import '~antd/dist/antd.css';
+
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startButton {
+  color: #ffffff !important;
+  background: #ff6602 !important;
+}
+
+.weather-content {
+  position: relative;
+  height: 360px;
+  width: 420px;
+  z-index: 1;
+}
+
+.weather-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(./images/bg.jpeg) center center no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: 10;
+}
+
+.carousel-column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-block {
+  width: 305px;
+}
+
+.contentStyle {
+  height: 360px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+.content-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.carousel-icon {
+  font-size: 50px;
+  color: #fff;
+  opacity: 0.3;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.carousel-city {
+  font-size: 30px;
+}
+
+.carousel-reload {
+  font-size: 80px;
+  cursor: pointer;
+  height: 160px;
+  line-height: 160px;
+}
+
+.carousel-cloud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 160px;
+}
+
+.carousel-tem {
+  text-align: center;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.carousel-temperature {
+  padding: 0 25px;
+  display: inline-block;
+}
+
+.carousel-temperature:last-of-type {
+  margin-right: -15px;
+}
+
+.weather-content .slick-dots {
+  display: none !important;
+}
   
