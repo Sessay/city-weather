@@ -2,7 +2,7 @@ import React from 'react';
 import 'antd/dist/antd.css'
 import './index.css'
 import { Carousel } from 'antd';
-import { ReloadOutlined, LeftOutlined, RightOutlined, AntCloudOutlined } from '@ant-design/icons';
+import { ReloadOutlined, LeftOutlined, RightOutlined } from '@ant-design/icons';
 import { createFromIconfontCN } from '@ant-design/icons';
 
 const IconFont = createFromIconfontCN({
