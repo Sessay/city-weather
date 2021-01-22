@@ -1,15 +1,14 @@
-import React from 'react';
-import App from './App';
-import Carousels from './Carousels';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Carousel, NoMatch } from './screens'
+const routes = [
+  {
+    path: '/carousel',
+    icon: 'UserOutlined',
+    component: Carousel
+  },
+  {
+    path: '/404',
+    component: NoMatch
+  }
+]
 
-const BasicRoute = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={App} />
-      <Route exact path="/carousels" component={Carousels} />
-    </Switch>
-  </BrowserRouter>
-);
-
-export default BasicRoute;
+export default routes

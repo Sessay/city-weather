@@ -1,115 +1,17 @@
 @import '~antd/dist/antd.css';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.startButton {
-  color: #ffffff !important;
-  background: #ff6602 !important;
-}
-
-.weather-content {
-  position: relative;
-  height: 360px;
-  width: 420px;
-  z-index: 1;
-}
-
-.weather-bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url(./images/bg.jpeg) center center no-repeat;
-  background-size: cover;
-  filter: blur(10px);
-  z-index: 10;
-}
-
-.carousel-column {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-
-.carousel-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.carousel-block {
-  width: 305px;
-}
-
-.contentStyle {
-  height: 360px;
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  color: #ffffff;
-}
-
-.content-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 100%;
-}
-
-.carousel-icon {
-  font-size: 50px;
-  color: #fff;
-  opacity: 0.3;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.carousel-city {
-  font-size: 30px;
-}
-
-.carousel-reload {
-  font-size: 80px;
-  cursor: pointer;
-  height: 160px;
-  line-height: 160px;
-}
-
-.carousel-cloud {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 160px;
 }
 
-.carousel-tem {
-  text-align: center;
-  height: 40px;
-  margin-bottom: 15px;
+#root {
+  flex: 1;
 }
-
-.carousel-temperature {
-  padding: 0 25px;
-  display: inline-block;
-}
-
-.carousel-temperature:last-of-type {
-  margin-right: -15px;
-}
-
-.weather-content .slick-dots {
-  display: none !important;
-}
-  
