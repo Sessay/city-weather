@@ -1,14 +1,5 @@
-import React from 'react';
-// import styled from 'styled-components';
 import { Button } from 'antd';
 import Image404 from './images/404.jpg';
-
-// const Container = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   padding: 30px;
-//   background: url(${Image404}) center center / 100% 100% no-repeat;
-// `;
 
 const NoMatch = ({ history }) => {
   const handleBackHomePage = () => {
@@ -23,8 +14,5 @@ const NoMatch = ({ history }) => {
     </div>
   );
 };
-
-NoMatch.propTypes = {};
-NoMatch.defaultProps = {};
 
 export default NoMatch;
